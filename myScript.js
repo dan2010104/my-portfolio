@@ -26,5 +26,4 @@ function changeimg(){
 
 window.onload = changeimg;
 
-//form validation
 
