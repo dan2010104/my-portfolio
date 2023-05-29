@@ -10,7 +10,8 @@
 		
 	</script>
 </head>
-<body>
+<body onload="displayGreeting(), changeimg()">
+	<marquee scrollamount="10"direction=" right"behavior="alternate"> <h1 id="greeting"></h1></marquee>
 	<header>
 		<div class="container">
 			<div id="name">
@@ -37,63 +38,45 @@
 					<p>i'm expert in web development with the following languages; hypertext markup langauge(HTML), cascading style sheet(CSS), javascript, PHP, JAVA as well as PYTHON</p>
 				</div>
 		</div>
-	</section>
 			<section id="main">
+				
 					<div class="container">
 						<div class="project">
 							<h3><b>SLIDESHOW OF MY FEATURED<br>PROJECT</b></h3><br><br><br>
-				<img name = "slide" width="500px" height="200px"><br><br><br><br>
+				<img name = "slide" width="500px" height="200px"><br><br><br>
 
 				<a href="PROJECT PAGE.html"><button><h3><i>see more...</i></h3></button></a>
 			</div>
-						<div class="table">
-							<table>
-								<tr>
-									<th>SKILLS</th>
-									<th>TOOLS</th>
-									<th>TECHNOLOGIES</th>
-								</tr>
-								<tr>
-									<td>Website development</td>
-									<td><ul>
-										<li>HTML5 markup</li>
-										<li>CSS3 styling</li>
-										<li>JAVASCRIPT dynamic web pages</li>
-										<li>PYTHON add functionality</li>
-									</ul></td>
-									<td>We use advanced computers with fast proccessing speed</td>
-								</tr>
-								<tr>
-									<td>Application developments</td>
-									<td>
-									<ul>
-										<li>JAVASCRIPT internet applications</li>
-										<li>PYTHON computer applications</li>
-										<li>JAVA mobile applications</li>
-									</ul></td>
-									<td>We use advanced computers with fast proccessing speed</td>
-								</tr>
-							</table>
+						<div class="skills">
+							<h1> MY SKILLS, TOOLS THAT I'M CURRENT USING AND TECHNOLOGIES</h1>
+							<h3>WEDSITES PROGRAMMING</h3>
+							<P>I have proffession skills in wed design and wed development by using these languages; html, css ' javascript as well as php language</P>
+							<img src="UMSgb.gif" width="400px">
+							<h3>APPLICATON DEVELOPMENT</h3>
+							<P>i have proffession skills in application development by using these language; java and python</P>
 						</div>
+					</section>
+
+						<section id="form1">
 						<div class="contact"> 
-						<form >
+						<form name="myform" method="post" action="abc.jsp" onsubmit="return validateform()" >
 							<div>
 							<h3><b>Contact form</b></h3>
 							<label for="Firstname">Firstname:</label>
-	                        <input type="text" id="firstname" name="Firstname"><br><br>
+	                        <input type="text" name="Firstname"><br><br>
                             <label for="Surname">Surname:</label>
-	                        <input type="text" name="Surname" id="Surname">
+	                        <input type="text" name="Surname" >
 	                       <p>Gender:</P><br> 
-	                       	<input type="radio" name="Gender" value="Male"><label>Male</label><br>
-	                       	<input type="radio" name="Gender" value="Female"><label>Female</label><br>
+	                       	<input type="radio" name="Gender" value="Male"><label>Male</label>
+	                       	<input type="radio" name="Gender" value="Female"><label>Female</label>
 	                       	<input type="radio" name="Gender" value="Other"><label>Other</label></p>
 							<label>Email</label>
 							<input type="text" name="Email" placeholder="example@gmail.com" id="Email" ><br><br>
 							<label>Phone number</label>
-							<input type="tel" value="+265-" id="number"><br><br>
+							<input type="tel" name="number"><br><br>
 							<label>Message</label><br><br>
 							<textarea rows="5" cols="50" placeholder="--type Message here--"></textarea><br><br>
-							<button type="Submit">Submit</button>
+							<input type="submit" value="submit">
 							</div>
 						</form>
 					</div>
