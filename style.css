@@ -162,18 +162,126 @@ header a:hover{
 
 }
 
-.contact button{
+ button{
 	background-color: skyblue;
 	padding: 5px;
 	border-radius: 6px;
 	color: blue;
 }
 
+.skill{
+	background-color: #35425a;
+	padding: 50px;
+	margin-top: 20px;
+}
+
+.skill  p{
+	color: skyblue;
+}
+
+.skill  li{
+	color: skyblue;
+}
+
+.skill  center{
+	color: skyblue;
+}
+
+.skill h1{
+	color: skyblue;
+}
+
+#bar1{
+	width: 1%;
+	height: 30px;
+	background-color: #04AA6D;
+	line-height: 30px;
+	color: white;
+	margin: 10px;
+}
+
+#bar1{
+	width: 3%;
+	height: 30px;
+	background-color: #04AA6D;
+	line-height: 30px;
+	color: white;
+	margin: 10px;
+	text-align: center;
+}
+
+#bar2{
+	width: 3%;
+	height: 30px;
+	background-color: #04AA6D;
+	line-height: 30px;
+	color: white;
+	margin: 10px;
+	text-align: center;
+}
+
+#bar3{
+	width: 3%;
+	height: 30px;
+	background-color: #04AA6D;
+	line-height: 30px;
+	color: white;
+	margin: 10px;
+	text-align: center;
+}
+
+#bar4{
+	width: 3%;
+	height: 30px;
+	background-color: #04AA6D;
+	line-height: 30px;
+	color: white;
+	margin: 10px;
+	text-align: center;
+}
+
+#bar5{
+	width: 3%;
+	height: 30px;
+	background-color: #04AA6D;
+	line-height: 30px;
+	color: white;
+	margin: 10px;
+	text-align: center;
+}
+
+#bar6{
+	width: 3%;
+	height: 30px;
+	background-color: #04AA6D;
+	line-height: 30px;
+	color: white;
+	margin: 10px;
+	text-align: center;
+}
+
+#bar7{
+	width: 3%;
+	height: 30px;
+	background-color: #04AA6D;
+	line-height: 30px;
+	color: white;
+	margin: 10px;
+	text-align: center;
+}
+
+
 #projects .container{
 	margin-top: 10px;
 	 background-color: #e6e6e6;
 	 width: 100%;
 	 color: #35425d;
+	}
+
+	.location img{
+		height: 90px;
+		width: 50px;
+		display: inline;
 	}
 
  .icon{

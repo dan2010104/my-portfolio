@@ -51,14 +51,182 @@ function displayGreeting(){
 
 //form validation
 
-function validateform(){
-	var firstname = document.myform.firstname.value;
-	var surname = document.myform.surname.value;
+function checkform(form){
+  if (form.Firstname.value == "") {
+  	alert("Firstname cannot be blank!");
+  	form.Firstname.focus();
+  	return false;
+  }
+  if (form.Surname.value == "") {
+  	alert("Surname cannot be blank!");
+  	form.Surname.focus();
+  	return false;
+  }
+  if (form.Email.value == "") {
+  	alert("Email cannot be blank!");
+  	form.Email.focus();
+  	return false;
+  }
+  if (form.Contact.value == "") {
+  	alert("Contact cannot be blank!");
+  	form.Contact.focus();
+  	return false;
+  }
+}
 
-	if (firstname=="null" || firstname=="") {
-		alert("firstname can't be empty!");
-		return false;
-	}
+//progress bars
+var i = 0;
 
+function move(){
+	if (i == 0) {
+		i = 0;
+		var elem = document.getElementById("bar1");
+		var width = 3;
+		var id = setInterval(frame, 3);
+		function frame(){
+			if (width >= 100) {
+			clearInterval(id);
+			i = 0;
+		}
+			else{
+				width++;
+				elem.style.width = width + "%";
+				elem.innerHTML = width + "%";
+			}
+		}
+	} 
+}
+
+var i = 0;
+
+function have(){
+	if (i == 0) {
+		i = 0;
+		var elem = document.getElementById("bar2");
+		var width = 3;
+		var id = setInterval(frame, 3);
+		function frame(){
+			if (width >= 100) {
+			clearInterval(id);
+			i = 0;
+		}
+			else{
+				width++;
+				elem.style.width = width + "%";
+				elem.innerHTML = width + "%";
+			}
+		}
+	} 
+}
+
+var i = 0;
+
+function sure(){
+	if (i == 0) {
+		i = 0;
+		var elem = document.getElementById("bar3");
+		var width = 3;
+		var id = setInterval(frame, 3);
+		function frame(){
+			if (width >= 50) {
+			clearInterval(id);
+			i = 0;
+		}
+			else{
+				width++;
+				elem.style.width = width + "%";
+				elem.innerHTML = width + "%";
+			}
+		}
+	} 
+}
+
+var i = 0;
+
+function make(){
+	if (i == 0) {
+		i = 0;
+		var elem = document.getElementById("bar4");
+		var width = 3;
+		var id = setInterval(frame, 3);
+		function frame(){
+			if (width >= 72) {
+			clearInterval(id);
+			i = 0;
+		}
+			else{
+				width++;
+				elem.style.width = width + "%";
+				elem.innerHTML = width + "%";
+			}
+		}
+	} 
+}
+
+var i = 0;
+
+function take(){
+	if (i == 0) {
+		i = 0;
+		var elem = document.getElementById("bar5");
+		var width = 3;
+		var id = setInterval(frame, 3);
+		function frame(){
+			if (width >= 60) {
+			clearInterval(id);
+			i = 0;
+		}
+			else{
+				width++;
+				elem.style.width = width + "%";
+				elem.innerHTML = width + "%";
+			}
+		}
+	} 
+}
+
+
+var i = 0;
+
+function hello(){
+	if (i == 0) {
+		i = 0;
+		var elem = document.getElementById("bar6");
+		var width = 3;
+		var id = setInterval(frame, 3);
+		function frame(){
+			if (width >= 80) {
+			clearInterval(id);
+			i = 0;
+		}
+			else{
+				width++;
+				elem.style.width = width + "%";
+				elem.innerHTML = width + "%";
+			}
+		}
+	} 
+}
+
+var i = 0;
+
+function sharp(){
+	if (i == 0) {
+		i = 0;
+		var elem = document.getElementById("bar7");
+		var width = 3;
+		var id = setInterval(frame, 3);
+		function frame(){
+			if (width >= 60) {
+			clearInterval(id);
+			i = 0;
+		}
+			else{
+				width++;
+				elem.style.width = width + "%";
+				elem.innerHTML = width + "%";
+			}
+		}
+	} 
 }
 

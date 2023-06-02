@@ -10,7 +10,7 @@
 		
 	</script>
 </head>
-<body onload="displayGreeting(), changeimg()">
+<body onload="displayGreeting(), changeimg(), setUp()">
 	<marquee scrollamount="10"direction=" right"behavior="alternate"> <h1 id="greeting"></h1></marquee>
 	<header>
 		<div class="container">
@@ -51,35 +51,50 @@
 							<h1> MY SKILLS, TOOLS THAT I'M CURRENT USING AND TECHNOLOGIES</h1>
 							<h3>WEDSITES PROGRAMMING</h3>
 							<P>I have proffession skills in wed design and wed development by using these languages; html, css ' javascript as well as php language</P>
-							<img src="UMSgb.gif" width="400px">
+							<img src="UMSgb.gif" width="300px">
 							<h3>APPLICATON DEVELOPMENT</h3>
-							<P>i have proffession skills in application development by using these language; java and python</P>
+							<P>i have proffession skills in application development by using these language; java and python</P><br>
+							<a href="skills.html"><button>see more....</button></a>
 						</div>
 					</section>
 
 						<section id="form1">
 						<div class="contact"> 
-						<form name="myform" method="post" action="abc.jsp" onsubmit="return validateform()" >
-							<div>
+						<form method="POST" action="form-handler" onsubmit="return checkform(this);">
 							<h3><b>Contact form</b></h3>
+						<div>
 							<label for="Firstname">Firstname:</label>
-	                        <input type="text" name="Firstname"><br><br>
+	                        <input type="text" name="Firstname" id="Firstname"><br><br>
+	                        <div class="error"></div>
+	                    </div>
+	                    <div>
                             <label for="Surname">Surname:</label>
-	                        <input type="text" name="Surname" >
+	                        <input type="text" name="Surname" id="Surname">
+	                        <div class="error"></div>
+	                    </div>
+	                    <div>
 	                       <p>Gender:</P><br> 
 	                       	<input type="radio" name="Gender" value="Male"><label>Male</label>
 	                       	<input type="radio" name="Gender" value="Female"><label>Female</label>
 	                       	<input type="radio" name="Gender" value="Other"><label>Other</label></p>
+	                    </div>
+	                    <div>
 							<label>Email</label>
 							<input type="text" name="Email" placeholder="example@gmail.com" id="Email" ><br><br>
-							<label>Phone number</label>
-							<input type="tel" name="number"><br><br>
+							<div class="error"></div>
+						</div>
+						<div>
+							<label>Contact</label>
+							<input type="tel" name="number" id="Contact"><br><br>
+							<div class="error"></div>
+						</div>
+						<div>
 							<label>Message</label><br><br>
 							<textarea rows="5" cols="50" placeholder="--type Message here--"></textarea><br><br>
-							<input type="submit" value="submit">
-							</div>
+						</div>
+							<button type="Submit">Submit</button>
+						</div>
 						</form>
-					</div>
 					</div>	
 				</section>
 				<footer>

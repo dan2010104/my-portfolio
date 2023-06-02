@@ -21,7 +21,46 @@
 				</ul>
 			</nav>
 		</div>
-	</header>
+	</header><br>
+	<section id="form1">
+						<div class="contact"> 
+						<form name="mform" method="POST" action="form-handler" onsubmit="return myform(this);">
+							<h3><b>Contact form</b></h3>
+						<div>
+							<label for="Firstname">Firstname:</label>
+	                        <input type="text" name="Fname" id="Fname"><br><br>
+	                        <div class="error"></div>
+	                    </div>
+	                    <div>
+                            <label for="Surname">Surname:</label>
+	                        <input type="text" name="Sname" id="Sname">
+	                        <div class="error"></div>
+	                    </div>
+	                    <div>
+	                       <p>Gender:</P><br> 
+	                       	<input type="radio" name="Gender" value="Male"><label>Male</label>
+	                       	<input type="radio" name="Gender" value="Female"><label>Female</label>
+	                       	<input type="radio" name="Gender" value="Other"><label>Other</label></p>
+	                    </div>
+	                    <div>
+							<label>Email</label>
+							<input type="text" name="mail" placeholder="example@gmail.com" id="mail" ><br><br>
+							<div class="error"></div>
+						</div>
+						<div>
+							<label>Contact</label>
+							<input type="tel" name="number" id="Cont"><br><br>
+							<div class="error"></div>
+						</div>
+						<div>
+							<label>Message</label><br><br>
+							<textarea rows="5" cols="50" placeholder="--type Message here--"></textarea><br><br>
+						</div>
+							<button type="Submit">Submit</button>
+						</div>
+						</form>
+					</div>	
+				</section>
 <section id="about">
 	<div class="container">
 		<div class="location">
