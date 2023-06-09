@@ -60,7 +60,34 @@
 						</ol>
 					</div>
 				</div>		
-						
+						<?php
+	$serverName = "localhost";
+	$userName = "root";
+	$password = "";
+	$dbName = "skills";
+
+	//create connection
+	$conn = mysqli_connect($serverName, $userName, $password, $dbName);
+	if (!$conn) {
+		die("connection failed:" .mysqli_connect_error());
+	}
+
+	echo "SKILLS TABLE AND TOOLS" ."<br>";
+	
+	//Retrieve data from database
+
+	$sql = "SELECT*FROM `skills_details`;";
+	$result = $conn->query( $sql);
+	if ($result->num_rows>0){
+		while ($row = $result->fetch_assoc()) {
+			echo "SKILLS ID: " .$row["SKILLS_ID"], " -SKILLS:" .$row["SKILLS"], " | TOOLS:" .$row["TOOLS"], " | TECHNOLOGY:" .$row["TECHNOLOGY"]."<br>";
+
+		}
+	} else {
+		echo "0 results";
+	}
+	
+?>	
 				<footer>
 					<h3>contact me on</h3>
 					<img src="EMAIL.png">

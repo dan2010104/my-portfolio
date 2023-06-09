@@ -55,7 +55,34 @@
 				<p>Click the image to view my proffessional python project </p>
 			</div>
 		</div>
-	</section>
+	</section><?php
+	$serverName = "localhost";
+	$userName = "root";
+	$password = "";
+	$dbName = "projects";
+
+	//create connection
+	$conn = mysqli_connect($serverName, $userName, $password, $dbName);
+	if (!$conn) {
+		die("connection failed:" .mysqli_connect_error());
+	}
+
+	echo "PROJECTS LIST DETAILS" ."<br>";
+	
+	//Retrieve data from database
+
+	$sql = "SELECT*FROM `project_list`;";
+	$result = $conn->query( $sql);
+	if ($result->num_rows>0){
+		while ($row = $result->fetch_assoc()) {
+			echo "PROJECT ID: " .$row["PROJECT_ID"], " -PROJECT NAME:" .$row["PROJECT_NAME"], " | PROJECT CATEGORY:" .$row["PROJECT_CATEGORY"], " | PROGRESS:" .$row["PROGRESS"]."<br>";
+
+		}
+	} else {
+		echo "0 results";
+	}
+	
+?>
 				<footer>
 					<h3>contact me on</h3>
 					<img src="EMAIL.png">
